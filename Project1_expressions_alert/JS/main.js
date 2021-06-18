@@ -28,3 +28,4 @@ function My_First_Function() {          //Defining a function and naming it
     document.getElementById("Green_Text") .innerHTML = result; //Putting the value of 
                                             //result into HTML element with "Green_Text" ID
 }
+
