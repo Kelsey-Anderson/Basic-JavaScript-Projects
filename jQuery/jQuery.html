@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+
+    <script>
+        $(document).ready(function() {
+            $("html").append(
+
+            "<body>\
+                <div id='container'>\
+                    <div id='inner'>\
+                        <h1>Quick! Click the right paragraph!</h1>\
+                        <p id='1'>Paragraph 1</p>\
+                        <p id='2'>Paragraph 2</p>\
+                        <p id='3'>Paragraph 3</p>\
+                    </div>\
+                </div>\
+            </body>"
+            );
+            
+            $("#2").css({"color":"red"}); //this applies the css font color "red" to Paragraph 2
+            $("#3").click(function() { //when the paragraph 3 is clicked .....
+                $('h1').hide(); });//it hides the text in the header.
+            $("#1").on("click", function() { //when paragraph 1 is clicked ...
+            alert( "You clicked the correct one!" );})//an alert pops up
+
+            $("p").hide(5000); // slowly hides the paragraphs 
+
+            
+        });
+
+
+    </script>
+ 
+
+</html> 
