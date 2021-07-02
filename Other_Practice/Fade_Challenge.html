@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            //adding some fade in effect
+            body {
+                opacity: 1;
+                transition: 3s opacity;
+              }
+              body.fade-out {
+                  opacity: 0;
+                  transition: none;
+              }
+              html {
+                  background-color: blue;
+              }
+        </style>
+    </head>
+
+    <body>
+        <script>
+            document.body.classList.add('fade-out');   
+        </script>
+
+
+        <p> This is a fade challenge ...</p>
+        
+
+        <script>
+                window.addEventListener('DOMContentLoaded', () => {
+                document.body.classList.remove('fade-out');
+            });
+    
+        </script>
+
+    </body>
+
+</html> 
