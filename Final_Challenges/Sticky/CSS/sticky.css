@@ -1,0 +1,85 @@
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 50px;
+    font-size: 50px;
+    text-align: right;
+}
+
+.open-button {
+    background-color:darkslategrey;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.open-button:hover {
+    background-color:darkgoldenrod;
+    box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*The Popup form hidden*/
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/*form container style*/
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+
+}
+
+/*input fields*/
+.form-container input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/*inputs focus, do something*/
+.form-container input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* set style for buttons */
+.form-container .btn {
+    background-color:chocolate;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor:pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/*color for cancel button*/
+.form-container .cancel {
+    background-color: red;
+}
+
+/* button hover effects*/
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+

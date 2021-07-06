@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <script src="JS/form.js" defer></script>
+        <link rel="stylesheet" href="CSS/Form.css">
+    </head>
+
+    <body>
+        <button class="open-button" onclick="openForm()">Open Form</button>
+
+            <div class="form-popup" id="myForm">
+        
+                <form class="form-container">
+                    <h1>Enter Your information</h1>
+                
+                    <label for="name"><b>Name</b></label>
+                        <input type="text"name="Name">
+                
+                    <label for="phone"><b>Phone</b></label>
+                        <input type="text" name="number">
+                
+                    <button type="submit" class="btn">Enter</button>
+                    <button type ="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+                </form>
+            </div>
+
+    </body>
+
+</html> 
+

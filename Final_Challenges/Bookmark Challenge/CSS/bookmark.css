@@ -1,0 +1,15 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#section1 {
+    height: 600px;
+    background-color:aquamarine;
+    font-size: xx-large;
+}
+
+#section2 {
+    height: 600px;
+    background-color: yellow;
+    font-size: xx-large
+}
